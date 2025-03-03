@@ -1,0 +1,49 @@
+1. install Node.js
+
+    In Window:
+
+    by goto the offical site
+    check:  >node --version
+            >npm --version
+
+    To let npm run on powershell as VSCode default terminal: 
+        >Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
+    Make sure the PATH in environment varible have include:
+        C:\Users\XXX\AppData\Roaming\npm
+
+    In Linux:
+
+    $ sudo apt install curl
+    $ curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+    $ sudo apt-get update
+    $ sudo apt install nodejs
+    $ node --version
+    $ npm --version
+    $ sudo npm install -g npm@latest
+
+2. install Git
+
+    In Window:
+        goto the website
+    In Linux:
+        $ sudo apt install git
+
+3. install Typescript 
+
+    >/$ npm install -g typescript@latest / @X.X.X
+    >/$ tec --version
+
+4. install VS Code
+
+    by the offical site 
+    and the typescript extensions
+
+## Make the first repo
+
+1. make a file call "todo"
+2. cd in "todo" and >npm init --yes
+3. add a tsconfig.json
+4. add a file call "src" and create index.ts inside
+5. complie by using commend >tsc
+6. check if "dist/index.js" is built
+7. excute >node dist/index.js
