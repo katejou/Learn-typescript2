@@ -31,7 +31,7 @@
 3. install Typescript 
 
     >/$ npm install -g typescript@latest / @X.X.X
-    >/$ tec --version
+    >/$ tsc --version
 
 4. install VS Code
 
@@ -40,10 +40,33 @@
 
 ## Make the first repo
 
-1. make a file call "todo"
+1. make a file call "1_todo"
+
 2. cd in "todo" and >npm init --yes
+
+    create a package.json file
+        it help track all the package that will be using
+
 3. add a tsconfig.json
+    
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "outDir": "./dist",
+        "rootDir": "./src"
+    }
+}
+
+
+    that define the javascript version, output directory, and input directory
+    
 4. add a file call "src" and create index.ts inside
+    
+    console.clear();
+    console.log("My todo list.");
+
 5. complie by using commend >tsc
+
 6. check if "dist/index.js" is built
+
 7. excute >node dist/index.js

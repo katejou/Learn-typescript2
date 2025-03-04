@@ -1,0 +1,15 @@
+# Ignore node_modules and environment files
+node_modules/
+.env
+
+# Ignore TypeScript build files (optional)
+*.tsbuildinfo
+
+# Ignore logs and OS-specific files
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# If this exists, remove or comment it out to include `dist/`
+dist/
